@@ -1,0 +1,752 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Square Foot</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Roboto:wght@100;300;400;500;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="main nav">
+
+                <input type="checkbox" id="nav-check">
+                <div class="logo">
+                    <img src="./assets/img/logo.png" class="imglogo">
+                </div>
+                <div class="nav-btn">
+                    <label for="nav-check">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </label>
+                </div>
+                <div class="nav-links">
+                    <ul id="nav_list">
+                        <li><a class="active" href="#home">HOME</a></li>
+                        <li><a href="#marbleCat">PRODUCTS</a></li>
+                        <li><a href="#vendors">VENDORS</a></li>
+                        <li><a href="#about">ABOUT US</a></li>
+                        <li><a href="#blogs">BLOGS</a></li>
+                        <li><a href="#joinus">JOIN US</a></li>
+                        <li><a href="#FormCont">CONTACT US</a></li>
+                    </ul>
+                </div>
+                <div class="icon">
+                    <i class="fa fa-user" aria-hidden="true"></i>
+                </div>
+                <div class="joinbtn">
+                    <button type="submit" class="joinbutton" style="font-family: Montserrat;">JOIN NOW</button>
+                </div>
+            </div>
+            <div class="searchbar">
+                <style>
+                    .searchbar {
+                        background-image: url("./assets/img/Ellipse.png"), url("./assets/img/tiles.png"), url("./assets/img/Ellipse.png"), url("./assets/img/tiles.png");
+                        background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
+                        background-position: left -2% top -23%, right -5% top -26%, right 6% bottom -26%, left -2% bottom -56%;
+                    }
+                </style>
+
+                <!-- <img src="./assets/img/Ellipse.png" class="ellipse">
+                <img src="./assets/img/tiles.png" class="tileimg"> -->
+
+                <div>
+                    <p class="heading">
+                        A Comission Free Market Place For
+                    </p>
+                    <p class="heading1">
+                        Marble And Granite
+                    </p>
+                </div>
+                <div class="searchContainer">
+                    <div class="searchbox">
+                        <div class="content">
+
+                            <select class="cityDropdown">
+
+                                <option value="All City">📍 All City
+                                </option>
+                                <option value="Rajasthan"> Rajasthan
+                                </option>
+                                <option value="Guragon"> Jaipur
+                                </option>
+                                <option value="Delhi"> Delhi
+                                </option>
+                            </select>
+                        </div>
+                        <div class="content">
+                            <i class="fa fa-search" aria-hidden="true" id="searchicon"></i>
+                            <input type="search" class="search" id="search" placeholder="Search Product">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--Categories Div-->
+            <div class="CategoriesHead">
+                <div>
+                    <p class="mainCathead">Categories</p>
+                </div>
+                <div class="categories">
+                    <div>
+                        <!--icon-->
+                        <i class="fa fa-angle-left" id="arrowicons"></i>
+                    </div>
+
+                    <!--Cat1-->
+                    <div class="stoneCategory">
+                        <div>
+                            <img src="./assets/img/Category1.png" class="imgCate">
+                        </div>
+                        <div class="catfooter">
+                            <div class="cathead">
+                                <p>Marble</p>
+                            </div>
+                            <div>
+                                <p class="catdesc">
+                                    Find the most exquisite imported/Indian colored marble, high quality modern
+                                    lifestyle
+                                    marble
+                                    in single Click, unpolished to polished finished marble direct from sources.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--Cat2-->
+                    <div class="stoneCategory">
+                        <div>
+                            <img src="./assets/img/Category2.png" class="imgCate">
+                        </div>
+                        <div class="catfooterCenter">
+                            <div class="catheadCenter">
+                                <p>Granite</p>
+                            </div>
+                            <div>
+                                <p class="catdescCenter">
+                                    Find the best quality and colorful granite almost in all custom and standard sizes,
+                                    to unprocessed to finished granite slabs, Click & get the price quotation in no
+                                    time.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--Cat3-->
+                    <div class="stoneCategory">
+                        <div>
+                            <img src="./assets/img/Category3.png" class="imgCate">
+                        </div>
+                        <div class="catfooter">
+                            <div class="cathead">
+                                <p>Tiles</p>
+                            </div>
+                            <div>
+                                <p class="catdesc">
+                                    We bring to you premium & luxuries tiles that are detailed with perfection and art
+                                    of technology; Find the best tiles that meet your expectation, All tiles variety
+                                    available here!
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <!--icon-->
+                        <i class="fa fa-angle-right" id="arrowicons"></i>
+                    </div>
+                </div>
+            </div>
+
+            <!--Specialists Div-->
+            <div class="specialistContainer">
+                <div class="qualityUpperhalf">
+                    <div class="qualityHead">
+                        <p>Specialists In Quality Stones</p>
+                    </div>
+                    <div class="estimation">
+                        <div class="estimatesubs">
+                            <p class="approximation">12,44,544+</p>
+                            <p class="subhead">RFQs in 7 days</p>
+                        </div>
+                        <div class="estimatesubs">
+                            <p class="approximation">87,702+</p>
+                            <p class="subhead">Product Categories</p>
+                        </div>
+                        <div class="estimatesubs">
+                            <p class="approximation">20,44,544+</p>
+                            <p class="subhead">Active Suppliers</p>
+                        </div>
+                        <div class="estimatesubs">
+                            <p class="approximation">70+</p>
+                            <p class="subhead">Industries</p>
+                        </div>
+                    </div>
+
+                </div>
+                <!--Form Start-->
+                <div class="requestForm">
+                    <div class="formHeading">
+                        <p>One Request Multiple Quotes</p>
+                    </div>
+                    <div class="mainForm">
+                        <form>
+                            <div class="formpart1">
+                                <input type="text" name="inputtext" id="inputtext"
+                                    placeholder="Please type what you are looking for...">
+                                <select class="quantityDropdown">
+
+                                    <option value="Enter quantity">Enter quantity
+                                    </option>
+                                    <option value="10"> 10pc
+                                    </option>
+                                    <option value="20"> 20pc
+                                    </option>
+                                    <option value="30+"> 30pc and more..
+                                    </option>
+                                </select>
+                                <select class="categoryDropdown">
+
+                                    <option value="Category">Category
+                                    </option>
+                                    <option value="tile">Tile
+                                    </option>
+                                    <option value="marble"> Marble
+                                    </option>
+                                    <option value="other"> Other
+                                    </option>
+                                </select>
+                                <input type="number" name="mobileNo" id="mobNo" placeholder="Mobile no">
+                            </div>
+                            <div class="formpart2">
+                                <input type="text" name="inputtext" id="inputtext" placeholder="location">
+                                <div class="drop93">
+                                    <select class="budgetDropdown">
+
+                                        <option value="Budget">Budget
+                                        </option>
+                                        <option value="2lac">2 lakh
+                                        </option>
+                                        <option value="3lac">3 lakh
+                                        </option>
+                                        <option value="3lac+"> 3 lakh+
+                                        </option>
+                                    </select>
+                                    <div class="toggle">
+                                        <p class="switchtype">INR</p>
+                                        <label class="switch-wrap">
+                                            <input type="checkbox" />
+                                            <div class="switch"></div>
+                                        </label>
+                                        <p class="switchtype">USD</p>
+                                    </div>
+                                </div>
+                                <button type="submit" class="postrequest">POST REQUEST</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <!--Form End-->
+            </div>
+            <!--Specialist Container End-->
+        </div>
+        <!--Header Close-->
+
+
+        <!--Middle Part Start-->
+        <div class="middle">
+            <div class="marbleVariety" id="marbleCat">
+                <div class="subHeadings">
+                    <p id="catHead">Marbles</p>
+                    <button type="button" class="viewallbtn">VIEW ALL</button>
+                </div>
+                <div class="catelogueDisplay">
+                    <div class="Display">
+                        <div>
+                            <img src="./assets/img/marble1.png" class="imageDisplay">
+                        </div>
+                        <div class="contentDisplay">
+                            <p id="tagName">Merry Gold Granite</p>
+                        </div>
+                    </div>
+                    <div class="Display">
+                        <div>
+                            <img src="./assets/img/marble2.png" class="imageDisplay">
+                        </div>
+                        <div class="contentDisplay">
+                            <p id="tagName">Merry Gold Granite</p>
+                        </div>
+                    </div>
+                    <div class="Display" id="display">
+                        <div>
+                            <img src="./assets/img/marble2.png" class="imageDisplay">
+                        </div>
+                        <div class="contentDisplay">
+                            <p id="tagName">Merry Gold Granite</p>
+                        </div>
+                    </div>
+                    <div class="Display" id="display">
+                        <div>
+                            <img src="./assets/img/marble1.png" class="imageDisplay">
+                        </div>
+                        <div class="contentDisplay">
+                            <p id="tagName">Merry Gold Granite</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--Second Variety-->
+            <div class="marbleVariety">
+                <div class="subHeadings">
+                    <p id="catHead">Granite</p>
+                    <button type="button" class="viewallbtn">VIEW ALL</button>
+                </div>
+                <div class="catelogueDisplay">
+                    <div class="Display">
+                        <div>
+                            <img src="./assets/img/granite3.png" class="imageDisplay">
+                        </div>
+                        <div class="contentDisplay">
+                            <p id="tagName">Merry Gold Granite</p>
+                        </div>
+                    </div>
+                    <div class="Display">
+                        <div>
+                            <img src="./assets/img/granite4c.png" class="imageDisplay">
+                        </div>
+                        <div class="contentDisplay">
+                            <p id="tagName">Merry Gold Granite</p>
+                        </div>
+                    </div>
+                    <div class="Display" id="display">
+                        <div>
+                            <img src="./assets/img/granite3.png" class="imageDisplay">
+                        </div>
+                        <div class="contentDisplay">
+                            <p id="tagName">Merry Gold Granite</p>
+                        </div>
+                    </div>
+                    <div class="Display" id="display">
+                        <div>
+                            <img src="./assets/img/granite4c.png" class="imageDisplay">
+                        </div>
+                        <div class="contentDisplay">
+                            <p id="tagName">Merry Gold Granite</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--Tiles Variety-->
+            <div class="marbleVariety">
+                <div class="subHeadings">
+                    <p id="catHead">Tiles</p>
+                    <button type="button" class="viewallbtn">VIEW ALL</button>
+                </div>
+                <div class="catelogueDisplay">
+                    <div class="Display">
+                        <div>
+                            <img src="./assets/img/newtile1.png" class="imageDisplay">
+                        </div>
+                        <div class="contentDisplay">
+                            <p id="tagName">Merry Gold Granite</p>
+                        </div>
+                    </div>
+                    <div class="Display">
+                        <div>
+                            <img src="./assets/img/newtile.png" class="imageDisplay">
+                        </div>
+                        <div class="contentDisplay">
+                            <p id="tagName">Merry Gold Granite</p>
+                        </div>
+                    </div>
+                    <div class="Display" id="display">
+                        <div>
+                            <img src="./assets/img/newtile1.png" class="imageDisplay">
+                        </div>
+                        <div class="contentDisplay">
+                            <p id="tagName">Merry Gold Granite</p>
+                        </div>
+                    </div>
+                    <div class="Display" id="display">
+                        <div>
+                            <img src="./assets/img/newtile.png" class="imageDisplay">
+                        </div>
+                        <div class="contentDisplay">
+                            <p id="tagName">Merry Gold Granite</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--Top Products-->
+            <div class="marbleVariety">
+                <div class="subHeadings">
+                    <p class="productHead" id="catHead">Top Products</p>
+                    <button type="button" class="viewallbtn">VIEW ALL</button>
+                </div>
+                <div class="catelogueDisplay">
+                    <div class="Display">
+                        <div>
+                            <img src="./assets/img/Layer 392.png" class="imageDisplay">
+                        </div>
+                        <div class="contentDisplay">
+                            <p id="tagName">Merry Gold Granite</p>
+                        </div>
+                    </div>
+                    <div class="Display">
+                        <div>
+                            <img src="./assets/img/Layer 371.png" class="imageDisplay">
+                        </div>
+                        <div class="contentDisplay">
+                            <p id="tagName">Merry Gold Granite</p>
+                        </div>
+                    </div>
+                    <div class="Display" id="display">
+                        <div>
+                            <img src="./assets/img/Layer 38.png" class="imageDisplay">
+                        </div>
+                        <div class="contentDisplay">
+                            <p id="tagName">Merry Gold Granite</p>
+                        </div>
+                    </div>
+                    <div class="Display" id="display">
+                        <div>
+                            <img src="./assets/img/Layer 392.png" class="imageDisplay">
+                        </div>
+                        <div class="contentDisplay">
+                            <p id="tagName">Merry Gold Granite</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!--Middle Close-->
+        <div class="advt">
+            <div class="mainbanner">
+                <img src="./assets/img/banner_img.png" class="bannerimg">
+            </div>
+            <div class="arrowlefticon">
+                <i class="fa fa-angle-left"></i>
+            </div>
+            <div class="advtContainer inner-outline">
+                <div class="advthead">
+                    <p class="headadvt">Shine Marbles</p>
+                </div>
+                <div class="saleHead">
+                    <p>SALE</p>
+                </div>
+                <div class="btnclass">
+                    <div>
+                        <button type="submit" class="orderbutton">ORDER NOW</button>
+                    </div>
+                    <div class="fiftySubHead">
+                        50
+                    </div>
+                    <div>
+                        <p class="advtpara1">%</p>
+                        <p class="advtpara2">OFF</p>
+                    </div>
+                </div>
+            </div>
+            <div class="arrowrighticon">
+                <i class="fa fa-angle-right"></i>
+            </div>
+
+        </div>
+        <div class="ellipsePlay">
+            <img src="./assets/img/Ellipse 3 copy.png" class="smallEllipse">
+            <img src="./assets/img/Ellipse 3 (1).png" class="smallEllipse">
+            <img src="./assets/img/Ellipse 3 copy.png" class="smallEllipse">
+        </div>
+
+        <div class="citiesContainer">
+            <div class="cityHead">
+                <p>Suppliers by cities</p>
+            </div>
+            <div class="cityimg">
+                <img src="./assets/img/city1.png" class="thumbnailCity">
+                <img src="./assets/img/city2.png" class="thumbnailCity">
+                <img src="./assets/img/city3.png" class="thumbnailCity" id="img23">
+                <img src="./assets/img/city4.png" class="thumbnailCity" id="img23">
+                <img src="./assets/img/city5.png" class="thumbnailCity" id="img23">
+                <img src="./assets/img/city7.png" class="thumbnailCity" id="img23">
+            </div>
+
+        </div>
+        <div class="recommendCont">
+            <div class="recoHead">
+                <p>What People Are Saying About Us</p>
+            </div>
+            <div class="recoContent">
+                <div class="iconleft">
+                    <i class="fa fa-angle-left"></i>
+                </div>
+                <div class="reco1">
+                    <div>
+                        <i class="fa fa-quote-left" aria-hidden="true" id="quoteicon"></i>
+                    </div>
+                    <div class="recoPara">
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
+                            ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                            laboris nisi
+                        </p>
+                    </div>
+                    <div class="profileCont">
+                        <div>
+                            <img src="./assets/img/profileimg.png">
+                        </div>
+                        <div class="designation">
+                            <p class="Recotitle">Mr. Pradeep Sharma</p>
+                            <p class="RecoSubtitle">Roteck Equipment Limited</p>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="reco1" id="reco2">
+                    <div>
+                        <i class="fa fa-quote-left" aria-hidden="true" id="quoteicon"></i>
+                    </div>
+                    <div class="recoPara">
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
+                            ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                            laboris nisi
+                        </p>
+                    </div>
+                    <div class="profileCont">
+                        <div>
+                            <img src="./assets/img/profileimg.png">
+                        </div>
+                        <div class="designation">
+                            <p class="Recotitle">Mr. Pradeep Sharma</p>
+                            <p class="RecoSubtitle">Roteck Equipment Limited</p>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="iconright">
+                    <i class="fa fa-angle-right"></i>
+                </div>
+            </div>
+        </div>
+        <!--Recommendations End-->
+
+
+        <!--Get In touch Form Start-->
+        <div class="mainFormcontainer" id="FormCont">
+            <div class="contactForm">
+                <div class="formContainer">
+                    <form>
+                        <div class="formhead">
+                            <p>Get In Touch</p>
+                        </div>
+                        <div class="formboxes">
+                            <input type="text" id="username" placeholder="Name" required>
+                            <input type="text" id="username" placeholder="Email">
+                        </div>
+                        <div class="formboxes">
+                            <input type="text" id="username" placeholder="Subject">
+                            <input type="text" id="username" placeholder="Mobile Number">
+                        </div>
+                        <div class="formboxes">
+                            <textarea id="msgbox" placeholder="Message"></textarea>
+                        </div>
+                        <div>
+                            <button type="submit" id="submitbutton">Submit</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="addressinfo">
+                    <div class="addHead">
+                        <p class="Infotitle">Get Information</p>
+                        <div class="individualInfo">
+                            <i class='fas fa-map-marker-alt' id="infoicons"></i>
+                            <p class="Infoheading">Office Address</p>
+                            <p class="infocontent">1st Floor, Emam Chowk, K.K Complex, Goda
+                                Bass, Makrana-341505</p>
+                        </div>
+                        <div class="individualInfo">
+
+                            <i class="fa fa-phone" aria-hidden="true" id="infoicons"></i>
+                            <p class="Infoheading">Phone Number</p>
+                            <p class="infocontent">+91-9610733322</p>
+                        </div>
+                        <div class="individualInfo">
+                            <i class="fa fa-envelope" id="infoicons"></i>
+                            <p class="Infoheading">Send Mail</p>
+                            <p class="infocontent">support@mysquarefoot.com</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <!--Form End-->
+
+        <!--FAQs Start-->
+        <div class="faqsContainer">
+            <div class="faqsHeading">
+                <p>Frequently Asked Questions</p>
+            </div>
+            <div>
+                <select class="FAQDropdown">
+
+                    <option value="q1">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                        tempor incididunt ut?
+                    </option>
+                    <option value="drop">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                        incididunt
+                        ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                        laboris nisi
+                    </option>
+
+                </select>
+            </div>
+            <div>
+                <select class="FAQDropdown">
+
+                    <option value="q1">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod ?
+                    </option>
+                    <option value="drop">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                        incididunt
+                        ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                        laboris nisi
+                    </option>
+
+                </select>
+            </div>
+            <div>
+                <select class="FAQDropdown">
+
+                    <option value="q1">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                        tempor incididunt ut?
+                    </option>
+                    <option value="drop">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                        incididunt
+                        ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                        laboris nisi
+                    </option>
+
+                </select>
+            </div>
+            <div>
+                <select class="FAQDropdown">
+
+                    <option value="q1">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod ? labore
+                        et?
+                    </option>
+                    <option value="drop">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                        incididunt
+                        ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                        laboris nisi
+                    </option>
+
+                </select>
+            </div>
+        </div>
+        <!--FAQs End-->
+
+        <!--Footer Start-->
+
+        <div class="footer">
+            <div class="upperContainer" id="upperContainer">
+                <div class="upperfooter">
+                    <div class="footerCol">
+                        <p class="footerHead">ABOUT US</p>
+                        <p class="subheads">About Our Company</p>
+                        <p class="subheads">Blog</p>
+                        <p class="subheads">Contact us</p>
+                        <p class="subheads">Terms & Conditions</p>
+                        <p class="subheads">Privacy & Policy</p>
+                    </div>
+                    <div class="footerCol">
+                        <p class="footerHead">FOR BUYERS</p>
+                        <p class="subheads">Products</p>
+                        <p class="subheads">Browse Suppliers</p>
+                        <p class="subheads">Post Your Requirement</p>
+                        <p class="subheads">Customer Support</p>
+                    </div>
+                    <div class="footerCol">
+                        <p class="footerHead">FOR SUPPLIERS</p>
+                        <p class="subheads">Join For Free</p>
+                        <p class="subheads">Advertise With Us</p>
+                        <p class="subheads">Our Registration Package & Plans</p>
+                        <p class="subheads">Why to Join Us</p>
+                    </div>
+                    <div class="footerCol">
+                        <p class="footerHead">CONNECT WITH US</p>
+                        <div>
+                            <div class="emailCont">
+                                <i class="fa fa-envelope" id="infoicons2"></i>
+                                <p class="SubHeadcont">Email</p>
+                            </div>
+                            <div class="supportcont">
+                                <p class="infocontent1">support@mysquaresfoot.com</p>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="emailCont">
+                                <i class="fa fa-phone" aria-hidden="true" id="infoicons2"></i>
+                                <p class="SubHeadcont">Mobile Number</p>
+                            </div>
+                            <div class="supportcont">
+                                <p class="infocontent1">+91-9649949933</p>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="emailCont">
+                                <i class='fas fa-map-marker-alt' id="infoicons2"></i>
+                                <p class="SubHeadcont"> Address</p>
+                            </div>
+                            <div class="supportcont">
+                                <p class="infocontent1">F-10 Brindaban Complex,<br> Vidhyadhar Nagar Jaipur<br>
+                                    Rajasthan - 302039</p>
+                            </div>
+                            <div class="socialmediaicons">
+                                <i class="fa-brands fa-facebook-square"></i>
+                                <i class="fa-brands fa-twitter"></i>
+                                <i class="fa-brands fa-instagram"></i>
+                                <i class="fab fa-linkedin"></i>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footerBase">
+                <div class="baseFoot">
+                    <div>
+                        <img src="./assets/img/footer.png" class="visaimg">
+                    </div>
+                    <div class="writeup">
+                        <p>support@mysquaresfoot.com © 2021. All Right Reserved</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
